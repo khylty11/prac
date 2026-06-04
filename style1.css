@@ -30,27 +30,25 @@ body{
 }
 
 .rectangle {    
-   border-radius: 100px; 
-  height: 550px;
+    border-radius: 100px; 
+    height: 550px;
     margin: 0 auto; 
-  width: 1600px;         
-  background-color: #949494;
+    width: 1600px;         
+    background-color: #949494;
   p{
-   
-   padding: 50px;
-   font-family: "ARIAL";
-   font-weight: bold;
+    padding: 50px;
+    font-family: "ARIAL";
+    font-weight: bold;
     text-align: center;
     font-size: 45px;
     color: #000000;
-    
   }  
-  #buttonstart {
-   border-radius: 30px; 
+#buttonstart {
+  border-radius: 30px; 
   height: 100px;
-    position: relative;
-    bottom: -100px;
-    left: 450px;
+  position: relative;
+  bottom: -100px;
+  left: 450px;
   width: 700px;         
   background-color: #aa0101;
   a{
@@ -63,16 +61,34 @@ body{
    top: 15px;
    left: 125px;
   }
-   }
+  }
   .images{
-      
+    img{
+      position: relative;
+      width: 75px;
+      height:75px;
+    }
   }
   #ds{
-   width: 50px;
-   height:100;
-     position: relative;
-   top: 15px;
-   left: 1000px;
+   position: relative;
+   top: 120px;
+   left: 300px;
   }
+  #tg{
+    position: relative;
+   top: 120px;
+   left: 500px;
+  }
+  #yt{
+   position: relative;
+   top: 120px;
+   left: 340px;
+  }
+  #Twh{
+   position: relative;
+   top: 120px;
+   left: 360px;
+  }
+  
   
 }

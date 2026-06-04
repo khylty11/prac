@@ -1,36 +1,43 @@
 body {
- height: 500px; 
- height: 200px; 
-background: linear-gradient(to right, rgb(0, 0, 0),   50%, rgb(255, 0, 0) 50%);
-font-family: "ARIAL BLACK";
-max-width: 500px;
-margin: 50px auto;
-text-align: center;
+  background: linear-gradient(to right, rgb(0, 0, 0),   50%, rgb(255, 0, 0) 50%);
+  max-width: 500px; 
+  margin: 50px auto; 
+  text-align: center; 
 }                                                                                                                                     
-h1 {
-  text-align: right;
-}
- #qrkod{
-  margin-top: -62px;
-  margin-right: 79px
- }
-#generator{
-  margin-right: 80px
+.text{
+  position: relative;
+  color: rgb(255, 0, 0);
+  #qrkod{
+    color: rgb(0, 0, 0);
+  }
 }
 
-      
 input {
-width: 80%;
-padding: 10px;
- margin-bottom: 10px;
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
  }
 
- button {
-padding: 10px 20px;
-cursor: pointer;
+button {
+  padding: 10px 20px;
+  cursor: pointer;
         }
 
 img {
-margin-top: 20px;
-max-width: 250px;
+  margin-top: 20px;
+  max-width: 250px;
         }
+#khylty {
+  width: 300px;
+  height:100px;
+  position: absolute;
+  top: 690px;
+  left: 430px;
+}
+#govnokakoeto{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 490px;
+  left: 290px;
+}

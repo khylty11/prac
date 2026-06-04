@@ -8,11 +8,10 @@
 
 </head>
 <body>
-
-    <div id= generator><h1 style="color: rgb(255, 0, 0);"> Генератор QR-кодов</h1> </div>
-    <div id="qrkod"><h1 style="color: rgb(0, 0, 0);">QR-кодов</h1> </div>
+    <div class="text">
+            <h1>Генератор <span id="qrkod">QR-кодов</span></h1>
+    </div>
     <input type="text" id="urlInput" placeholder="Введите ссылку">
-    <br>
     <button onclick="generateQR()">Создать QR-код</button>
 
     <div id="result"></div>
@@ -26,20 +25,16 @@
                 return;
             }
 
-            const qrUrl =
-                `https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=${encodeURIComponent
-(url)}`;
+            const qrUrl =`https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=${encodeURIComponent(url)}`;
 
             document.getElementById('result').innerHTML =
                 `<img src="${qrUrl}" alt="QR-код" style="position: relative; top:50px;" >`;
         }
     </script>
+    <img src="image\khylty11.png" id="khylty" />
+    <img src="image\114138171802805463-no-bg-preview (carve.photos).png" id="govnokakoeto"/>
+</body>
 
-</body>
-<body>
-<img src="image\khylty11.png" width="300" height="100" style="position: relative; top: 500px; right: 100px;" />
-<img src="image\114138171802805463-no-bg-preview (carve.photos).png" width="200" height="200" style="position: relative; top:400px; right: 500px;" />
-</body>
 </html>
 
 
