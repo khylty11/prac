@@ -27,12 +27,12 @@ img {
   margin-top: 20px;
   max-width: 250px;
         }
-#khylty {
-  width: 300px;
-  height:100px;
+#goback {
+  width: 400px;
+  height:80px;
   position: absolute;
-  top: 490px;
-  left: 840px;
+  top: 22px;
+  left: 1580px;
 }
 #govnokakoeto{
   width: 350px;
@@ -40,9 +40,11 @@ img {
   position: absolute;
   top: -5%;
   left: -1%;
+   z-index: 3;
 }
 #luna{
  position: absolute; 
+ z-index: 4;
 }
 .kanji-bg {
     position: absolute;
@@ -57,6 +59,57 @@ img {
     font-size: 3.5rem;
     color: rgba(255, 26, 26, 0.2);
     text-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+    z-index: 4;
+    pointer-events: none;
+    user-select: none;
+}
+.kanji-bg2 {
+    position: absolute;
+    right: 60%;
+    top: 5%;
+    bottom: 5%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 3.5rem;
+    color: rgba(255, 26, 26, 0.2);
+    text-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+    z-index: 4;
+    pointer-events: none;
+    user-select: none;
+  }
+.kanji-bg3 {
+    position: absolute;
+    right: 20%;
+    top: 5%;
+    bottom: 5%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 3.5rem;
+    color: rgba(0, 0, 0, 0.911);
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    pointer-events: none;
+    user-select: none;
+}
+.kanji-bg4 {
+   position: absolute;
+    right: 10%;
+    top: 5%;
+    bottom: 5%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 3.5rem;
+    color: rgba(0, 0, 0, 0.911);
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
     z-index: 2;
     pointer-events: none;
     user-select: none;
@@ -80,31 +133,64 @@ img {
     position: absolute;
     top:  480px;
     left: 1080px;
+    z-index: 1;
+    opacity: 0.5;
 }
 #rm2{
     position: absolute;
     top:  75%;
     left: 50%;
+    z-index: 1;
+    opacity: 0.5;
 }
 #rm3{
     position: absolute;
     top:  240px;
     left: 1180px;
+    z-index: 1;
+    opacity: 0.5;
 }
 #rm4{
     position: absolute;
     top:  0px;
     left: 1280px;
+    z-index: 1;
+    opacity: 0.5;
 }
 #rm5{
     position: absolute;
     top:  -240px;
     left: 1380px;
+    z-index: 1;
+    opacity: 0.5;
 }
 #rm6{
     position: absolute;
-    top:  1000px;
-    left: 1000px;
+    top:  680px;
+    left: 660px;
+    z-index: 1;
+    opacity: 0.5;
+}
+#rm7{
+      position: absolute;
+    top:  450px;
+    left: 540px;
+    z-index: 1;
+    opacity: 0.5;
+}
+#rm8{
+    position: absolute;
+    top:  210px;
+    left: 430px;
+    z-index: 1;
+    opacity: 0.5;
+}
+#rm9{
+    position: absolute;
+    top:  -30px;
+    left: 330px;
+    z-index: 1;
+    opacity: 0.5;
 }
 
 /* Вращающийся магический круг в левом нижнем углу */
@@ -141,4 +227,22 @@ img {
 #QR{
   position: relative; top:25px;
 }
-
+#girl{
+  position:absolute;
+  right: 50px;
+  bottom: 50px;
+  z-index: 10;
+} 
+#katana{
+  position: absolute;
+  top: 160px;
+  left: 1560px;
+  filter: brightness(20%) invert(0%);
+}
+#khylty11{
+  width: 400px;
+  height:100px;
+  position: absolute;
+  bottom: 280px;
+  left: 810px;
+}
