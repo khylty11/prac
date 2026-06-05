@@ -2,7 +2,7 @@ body {
   background: linear-gradient(to right, rgb(0, 0, 0),   50%, rgb(255, 0, 0) 50%);
   max-width: 500px; 
   margin: 50px auto; 
-  text-align: center; 
+  text-align: center;
 }                                                                                                                                     
 .text{
   position: relative;
@@ -31,13 +31,109 @@ img {
   width: 300px;
   height:100px;
   position: absolute;
-  top: 690px;
-  left: 430px;
+  top: 490px;
+  left: 840px;
 }
 #govnokakoeto{
-  width: 200px;
-  height: 200px;
+  width: 350px;
+  height: 270px;
   position: absolute;
-  top: 490px;
-  left: 290px;
+  top: -5%;
+  left: -1%;
 }
+#luna{
+ position: absolute; 
+}
+.kanji-bg {
+    position: absolute;
+    right: 70%;
+    top: 5%;
+    bottom: 5%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 3.5rem;
+    color: rgba(255, 26, 26, 0.2);
+    text-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+    z-index: 2;
+    pointer-events: none;
+    user-select: none;
+}
+/* Красная луна в верхнем левом углу */
+.red-moon {
+    position: absolute;
+    top:  75%;
+    left: 50%;
+    width: 260px;
+    height: 260px;
+    background: radial-gradient(circle, #ff3333 0%, #800000 70%, #200000 100%);
+    border-radius: 50%;
+    box-shadow: 0 0 50px rgba(255, 0, 0, 0.5), inset -10px -10px 30px rgba(0, 0, 0, 0.8);
+    filter: blur(1px);
+    opacity: 0.85;
+    z-index: 2;
+    pointer-events: none;
+}
+#rm1{
+    position: absolute;
+    top:  480px;
+    left: 1080px;
+}
+#rm2{
+    position: absolute;
+    top:  75%;
+    left: 50%;
+}
+#rm3{
+    position: absolute;
+    top:  240px;
+    left: 1180px;
+}
+#rm4{
+    position: absolute;
+    top:  0px;
+    left: 1280px;
+}
+#rm5{
+    position: absolute;
+    top:  -240px;
+    left: 1380px;
+}
+
+/* Вращающийся магический круг в левом нижнем углу */
+.magic-circle {
+    position: absolute;
+    bottom: -80px;
+    left: -80px;
+    width: 300px;
+    height: 300px;
+    border: 2px double #ff1a1a;
+    border-radius: 50%;
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.3);
+    opacity: 0.4;
+    z-index: 2;
+    pointer-events: none;
+    animation: rotateCircle 25s linear infinite;
+}
+
+.magic-circle::before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    border: 1px dashed #ff1a1a;
+    border-radius: 50%;
+}
+
+@keyframes rotateCircle {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+#QR{
+  position: relative; top:25px;
+}
+
