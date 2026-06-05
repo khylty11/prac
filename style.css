@@ -101,6 +101,11 @@ img {
     top:  -240px;
     left: 1380px;
 }
+#rm6{
+    position: absolute;
+    top:  1000px;
+    left: 1000px;
+}
 
 /* Вращающийся магический круг в левом нижнем углу */
 .magic-circle {
