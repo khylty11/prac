@@ -18,19 +18,56 @@
     <div id="result"></div>
 
     <script>
-        function generateQR() {
-            const url = document.getElementById('urlInput').value.trim();
 
-            if (!url) {
-                alert('Введите ссылку');
+    async function generateQR() {
+        const url = document.getElementById('urlInput').value.trim();
+
+        if (!url) {
+            alert('Введите ссылку');
+            return;
+        }
+
+        const myApiUrl = `http://127.0.0.1:8000/Qr?text=${encodeURIComponent(url)}`;
+
+        try {
+
+            const response = await fetch(myApiUrl, {
+                method: 'POST',
+                credentials: 'include' 
+            });
+
+
+            if (response.status === 401) {
+                alert('Вы не авторизованы! Войдите в систему заново.');
+                return;
+            }
+            if (!response.ok) {
+                alert('Ошибка сервера при генерации QR-кода');
                 return;
             }
 
-            const qrUrl =`https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=${encodeURIComponent(url)}`;
+            const blob = await response.blob();
+            
+
+            const imageObjectURL = URL.createObjectURL(blob);
+
 
             document.getElementById('result').innerHTML =
-                `<img src="${qrUrl}" id="QR" alt="QR-код">`;
-        }
+                `<img src="${imageObjectURL}" id="QR" alt="QR-код">`;
+
+        } catch (error) {
+            console.error('Ошибка сети:', error);
+            alert('Не удалось связаться с сервером бэкенда');
+        } 
+    } 
+</script>
+
+
+
+
+
+
+
     </script>
     <a href="hello.html"><img src="image\go back.png" id="goback" /></a>
     <img src="image\luna.png" id="govnokakoeto"/>
