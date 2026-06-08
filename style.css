@@ -34,8 +34,8 @@ img {
   width: 400px;
   height:80px;
   position: absolute;
-  top: 22px;
-  left: 1580px;
+  top: -20px;
+  left: 1650px;
 }
 #govnokakoeto{
   width: 350px;
@@ -48,7 +48,7 @@ img {
 }
 #luna{
  position: absolute; 
- z-index: 4;
+ z-index: 6;
 }
 .kanji-bg {
     position: absolute;
@@ -123,7 +123,7 @@ img {
 
 .red-moon {
     position: absolute;
-    top:  75%;
+    top:  678px;
     left: 50%;
     width: 260px;
     height: 260px;
@@ -131,72 +131,104 @@ img {
     border-radius: 50%;
     /* box-shadow: 0 0 50px rgba(255, 0, 0, 0.5), inset -10px -10px 30px rgba(0, 0, 0, 0.8); */
     /* filter: blur(1px); */
-    opacity: 0.85;
-    z-index: 2;
+    opacity: 0.3;
+    z-index: 1;
     pointer-events: none;
 }
 #rm1{
     position: absolute;
-    top:  480px;
-    left: 1080px;
+    top:  442px;
+    left: 1060px;
     z-index: 1;
     opacity: 0.5;
 }
-#rm2{
+/* #rm2{
     position: absolute;
-    top:  75%;
+    top:  678px;
     left: 50%;
     z-index: 1;
     opacity: 0.5;
-}
+} */
 #rm3{
     position: absolute;
-    top:  240px;
-    left: 1180px;
+    top:  203px;
+    left: 1160px;
     z-index: 1;
     opacity: 0.5;
 }
 #rm4{
     position: absolute;
-    top:  0px;
+    top:  -28px;
     left: 1280px;
     z-index: 1;
     opacity: 0.5;
 }
-#rm5{
+/* #rm5{
     position: absolute;
-    top:  -240px;
+    top:  -250px;
     left: 1380px;
     z-index: 1;
     opacity: 0.5;
-}
+} */
 #rm6{
     position: absolute;
     top:  680px;
-    left: 660px;
+    left: 690px;
     z-index: 1;
-    opacity: 0.5;
+    opacity: 0.3;
 }
 #rm7{
       position: absolute;
     top:  450px;
-    left: 540px;
+    left: 570px;
     z-index: 1;
-    opacity: 0.5;
+    opacity: 0.3;
 }
 #rm8{
     position: absolute;
-    top:  210px;
-    left: 430px;
+    top:  215px;
+    left: 460px;
     z-index: 1;
-    opacity: 0.5;
+    opacity: 0.3;
 }
 #rm9{
     position: absolute;
-    top:  -30px;
-    left: 330px;
+    top:  -25px;
+    left: 360px;
     z-index: 1;
-    opacity: 0.5;
+    opacity: 0.3;
+
+}
+#rm10{
+    position: absolute;
+    top:  130px;
+    left: 150px;
+    z-index: 1;
+    opacity: 0.3;
+
+}
+#rm11{
+    position: absolute;
+    top:  280px;
+    left: -63px;
+    z-index: 1;
+    opacity: 0.3;
+
+}
+#rm12{
+    position: absolute;
+    top:  120px;
+    left: 1495px;
+    z-index: 1;
+    opacity: 0.3;
+
+}
+#rm13{
+    position: absolute;
+    top:  280px;
+    left: 1703px;
+    z-index: 1;
+    opacity: 0.3;
 
 }
 
@@ -232,7 +264,7 @@ img {
     to { transform: rotate(360deg); }
 }
 #QR{
-  position: relative; top:25px;
+  position: relative; top:-10px;
 }
 #girl{
   position:absolute;
@@ -243,8 +275,9 @@ img {
 #katana{
   position: absolute;
   top: 160px;
-  left: 1560px;
+  left: 1630px;
   filter: brightness(20%) invert(0%);
+  z-index: 5;
 }
 #khylty11{
   width: 400px;
@@ -252,18 +285,23 @@ img {
   position: absolute;
   bottom: 280px;
   left: 810px;
+  z-index: 5;
 }
 #katanared{
   position: absolute;
-  left: 800px;
+  top: 270px;
+  left: 820px;
   transform: rotate(240deg);
+  z-index: 5;
+
 }
 #katana3{
   width: 500px;
   height: 500px;
   position: absolute;
   left:-20px;
-  top: 170px
+  top: 170px;
+  z-index: 30;
   
 }
 #penta{
