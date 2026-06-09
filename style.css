@@ -279,20 +279,20 @@ img {
   filter: brightness(20%) invert(0%);
   z-index: 5;
 }
-#khylty11{
-  width: 400px;
-  height:100px;
+/* #khylty11{
+  width: 550px;
+  height: 50px;
   position: absolute;
   bottom: 280px;
   left: 810px;
-  z-index: 5;
-}
+  z-index: 10;
+} */
 #katanared{
   position: absolute;
   top: 270px;
   left: 820px;
   transform: rotate(240deg);
-  z-index: 5;
+  z-index: 10;
 
 }
 #katana3{
@@ -308,4 +308,17 @@ img {
   position: absolute;
   left: -49px;
   bottom: -40px;
+}
+
+#text2{
+  font-family: "Arial black";
+  font-size: 45px;
+  -webkit-text-stroke: #fd7070 2px;
+  position: absolute;
+  top: 580px;
+  left: 790px;
+  text-decoration: underline;
+  text-decoration-color: #9010f8;
+  text-decoration-thickness: 4px;
+  z-index: 10;
 }

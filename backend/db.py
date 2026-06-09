@@ -32,7 +32,7 @@ async def get_user(data: UserMod):
         data_d = data.model_dump()
         query = select(Users).filter_by(**data_d)
         result = await session.execute(query)
-        return result.scalars().one_or_none()
+        return result.scalars().first()
 
 
 async def add_user(data: UserMod):
